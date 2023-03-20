@@ -1,13 +1,14 @@
 ---
 layout: default
+title: PREPARING FOR INFLUENZA SEASON
+summary: Predicting staffing needs based on an analysis of Influenza mortality trends in the Unuted States
 modal-id: 1
 date: 2014-07-18
 img: flucover.png
 alt: image-alt
-project-date: April 2014
-title: PREPARING FOR INFLUENZA SEASON
-price: Analysis of Influenza mortality patterns in the United States to predict staffing needs
+project-date: November 2022
 client: 
 category:
 description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+
 ---
