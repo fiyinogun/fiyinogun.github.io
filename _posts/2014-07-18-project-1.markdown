@@ -9,6 +9,7 @@ client:
 category:
 title: PREPARING FOR INFLUENZA SEASON
 summary: Predicting staffing needs based on an analysis of Influenza mortality trends in the United States
+description:
 
 # Preparing for Influenza Season: Case Study
 
@@ -37,3 +38,4 @@ This data set contains general population estimates for U.S. state counties from
 ### Tools and Skills
 * Microsoft Excel: Data cleaning and exploratory analysis, Data transformation and integration, Statistical hypothesis testing
 * Tableau: Visual analysis (comparison, statistical, geographical), Forecasting time series, Creating data dashboards and storyboards
+---
