@@ -12,7 +12,6 @@ summary: Predicting staffing needs based on an analysis of Influenza mortality t
 
 ---
 
-description:
 # Preparing for Influenza Season: Case Study
 
 ### Background:
