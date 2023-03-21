@@ -11,7 +11,7 @@ title: PREPARING FOR INFLUENZA SEASON
 summary: Predicting staffing needs based on an analysis of Influenza mortality trends in the United States
 
 # Preparing for Influenza Season: Case Study
----
+
 ### Background:
 The United States has an Influenza season where more people than usual suffer from the flu. Some people develop serious complications and end up in the hospital. Hospitals and clinics need additional staff to adequately treat these extra patients.
 ### Goal
@@ -37,5 +37,3 @@ This data set contains general population estimates for U.S. state counties from
 ### Tools and Skills
 * Microsoft Excel: Data cleaning and exploratory analysis, Data transformation and integration, Statistical hypothesis testing
 * Tableau: Visual analysis (comparison, statistical, geographical), Forecasting time series, Creating data dashboards and storyboards
-
----
