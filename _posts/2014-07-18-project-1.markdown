@@ -11,8 +11,7 @@ title: PREPARING FOR INFLUENZA SEASON
 summary: Predicting staffing needs based on an analysis of Influenza mortality trends in the United States
 ---
 
-#### Background: 
-The United States has an Influenza season where more people than usual suffer from the flu. Some people develop serious complications and end up in the hospital. Hospitals and clinics need additional staff to adequately treat these extra patients.
+**Background**: The United States has an Influenza season where more people than usual suffer from the flu. Some people develop serious complications and end up in the hospital. Hospitals and clinics need additional staff to adequately treat these extra patients.
 
 **Goal**: To help a medical staffing agency that provides temporary workers to hospitals and clinics on an as needed basis
 
@@ -20,20 +19,24 @@ The United States has an Influenza season where more people than usual suffer fr
 
 **Role**: Data Analyst
 
-#### Purpose and context
-This project was part of CareerFoundry’s data analytics program. Here I demonstrated understanding of the complete analytical process, from the project management 
-phase to the final presentation stage. Introduction to advanced Excel functionality and various visualization techniques in Tableau.
+**Purpose and context**: This project was part of CareerFoundry’s data analytics program. Here I demonstrated understanding of the complete analytical process, from the project management phase to the final presentation stage. Introduction to advanced Excel functionality and various visualization techniques in Tableau.
 
-#### Data Source
+**Data Source**:
 * [Influenza deaths data](https://coach-courses-us.s3.amazonaws.com/public/courses/da_program/CDC_Influenza_Deaths_edited.xlsx) from the [CDC](https://wonder.cdc.gov/ucd-icd10.html):
 This data set contains information on Influenza deaths in the United States from 2009 to 2017. The data is categorized by state, year, month, age group, and number of deaths.
 
 * [Population data](https://coach-courses-us.s3.amazonaws.com/public/courses/data-immersion/A1-A2_Influenza_Project/Census_Population_transformed_202101.csv) from the U.S. Census Bureau:
 This data set contains general population estimates for U.S. state counties from 2009 to 2017. The population figures are further broken down by gender and age groups
 
-#### Tools and Skills
-* Microsoft Excel: Data cleaning and exploratory analysis, Data transformation and integration, Statistical hypothesis testing
+**Tools and Skills**:
+* Microsoft Excel: 
+    * Data cleaning and exploratory analysis
+    * Data transformation and integration
+    * Statistical hypothesis testing
 
-* Tableau: Visual analysis (comparison, statistical, geographical), Forecasting time series, Creating data dashboards and storyboards
+* Tableau: 
+    * Visual analysis (comparison, statistical, geographical) 
+    * Forecasting time series 
+    * Creating data dashboards and storyboards
 
 ---
