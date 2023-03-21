@@ -38,5 +38,7 @@ This data set contains general population estimates for U.S. state counties from
     * Visual analysis (comparison, statistical, geographical) 
     * Forecasting time series 
     * Creating data dashboards and storyboards
+    
+img: rawflu.png
 
 ---
