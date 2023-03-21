@@ -30,13 +30,19 @@ This data set contains general population estimates for U.S. state counties from
 
 **Tools and Skills**:
 * Microsoft Excel: 
+    
     * Data cleaning and exploratory analysis
+    
     * Data transformation and integration
+    
     * Statistical hypothesis testing
 
 * Tableau: 
+    
     * Visual analysis (comparison, statistical, geographical) 
+    
     * Forecasting time series 
+    
     * Creating data dashboards and storyboards
 
 **Analysis process**:
@@ -53,18 +59,14 @@ I then conducted extensive data cleaning and consistency checks on the Influenza
 
 The primary challenge during the cleaning phase, and indeed for the entire project was that about 82% of the death counts in the Influenza data were entered as “Suppressed” for privacy purposes in cases where the number of deaths was less than 10.   
 
-Raw Influenza data
 ![rawfludata](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/rawflu.png?raw=true)
 
 Since the range of potential values was between 0 and 10, I contemplated inputing the median value of 5 in place. However I ended up deciding to replace the suppressed values with 0 because I considered the range of values too small to affect the scope of the analysis. Also, any inputation could distort the data for many states, espescially in places like Alaska and District of Columbia where all the original records were suppressed.
 
-Cleaned Influenza data
 ![cleanfludata](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/cleanflu.png?raw=true)
 
-Raw population data
 ![raw population data](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/rawpop.png?raw=true)
 
-Cleaned population data
 ![cleanpopulationdata](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/cleanpop.png?raw=true)
 
 **Data Integration**:
@@ -103,6 +105,7 @@ From the results of the test, I rejected the null hypothesis. The p value (1.245
 After completion of statistical analysis in Excel, I prepared a preliminary report of my work and findings thus far. The report can be found[here](https://coach-courses-us.s3.amazonaws.com/exercises/1034/52364/6196ecb325d1b5552d815fd3364f5487/DI--Task-1.10-Consolidating-Analytical-Insights.pdf)
 
 **Results**:
+
 * When is flu season?
 
 I continued to explore the data further in Tableau in order to extract more insights. The use of several visualization techniques allowed me to answer the questions relevant to the project objectives.
@@ -138,8 +141,11 @@ I also determined the level of staffing need according to the state. In the map 
 **Conclusions**:
 
 From the analysis, I was able to determine that:
+
 * Influenza deaths are highest in the winter season (34% total between 2009 and 2017)
+
 * Generally, the most populous states have the highest number of deaths. These states are California, New York, Texas, Florida, and Pennsylvania
+
 * The elderly population (above 65 years old) has a significantly higher mortality rate thanthe rest of the population (under 65 years old). This is true in every state, regardless of population.
 
 **Reflection**:
