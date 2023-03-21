@@ -38,7 +38,115 @@ This data set contains general population estimates for U.S. state counties from
     * Visual analysis (comparison, statistical, geographical) 
     * Forecasting time series 
     * Creating data dashboards and storyboards
-    
-img: rawflu.png
+
+**Analysis process**:
+  
+The first stage of the project was to source the data and check for its reliability. As both data sets came from reputable U.S. government organizations, they were considered reliable for the purpose of the analysis.
+
+Based on the project brief provided by CareerFoundry, I began formulating the hypothesis which would serve as the focal point of the entire project.
+
+Hypothesis: People’s immune systems can become weaker with age. If a person is older than sixty-five, then the risk of dying from the flu is higher.
+
+I also had to determine the relevance of both data sets to the project objectives. There were other data sets provided by CareerFoundry which, upon assessment here, deemed not relevant to my hypothesis.
+
+I then conducted extensive data cleaning and consistency checks on the Influenza deaths and population census data, including removing duplicates, fixing inconsistent formatting, checking for missing values, and outliers.
+
+The primary challenge during the cleaning phase, and indeed for the entire project was that about 82% of the death counts in the Influenza data were entered as “Suppressed” for privacy purposes in cases where the number of deaths was less than 10.   
+
+Raw Influenza data
+![rawfludata](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/rawflu.png?raw=true)
+
+Since the range of potential values was between 0 and 10, I contemplated inputing the median value of 5 in place. However I ended up deciding to replace the suppressed values with 0 because I considered the range of values too small to affect the scope of the analysis. Also, any inputation could distort the data for many states, espescially in places like Alaska and District of Columbia where all the original records were suppressed.
+
+Cleaned Influenza data
+![cleanfludata](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/cleanflu.png?raw=true)
+
+Raw population data
+![raw population data](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/rawpop.png?raw=true)
+
+Cleaned population data
+![cleanpopulationdata](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/cleanpop.png?raw=true)
+
+**Data Integration**:
+
+To integrate the two cleaned data sets some transformations were necessary. 
+
+The number of deaths in the Influenza data were originally categorized by month while the population figures in the census data were categorized by year. To match the two, I aggregated the death counts by year, in the process losing the monthly detail. 
+
+In addition, the age groupings for both data sets did not match. The Influenza data was grouped by ten-year age groups while the census data was grouped by four-year age groups. I aggregated the total number of deaths by ten-year age groups. So, for example, 5 to 9 and 10 to 14 became 5 to 14.
+
+With the common variables of “State” and “Year”, both data sets were integrated (using VLOOKUP) to create a single data set.
+
+![integrated data set](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/integrateddata.png?raw=true)
+
+Since the population figures varied widely across states, I also had to normalize the number of deaths according to state population in order to have a better comparison of Influenza mortality.
+
+![normalized](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/normalizations.png?raw=true)
+
+**Statistical Analysis**:
+
+With the data explored, cleaned, and integrated, I could now tackle the question posed by thehypothesis.
+
+As a reminder the hypothesis is: People’s immune systems can become weaker with age. If a person is older than sixty-five, then the risk of dying from the flu is higher.
+
+Before proceeding, I generated new variables by aggregating the number of deaths and mortality rates for all the age groups below sixty-five and all the age groups sixty-five and above.
+
+I then conducted a two-sample t-test to compare the mortality rates of the two test populations.
+
+* Null hypothesis: People below 65 years old have a higher influenza mortality rate than people above 65 years old.
+* Alternative hypothesis: People above 65 years old have a higher influenza mortality rate than people below 65 years old.
+
+![ttest](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/ttest.png?raw=true)
+
+From the results of the test, I rejected the null hypothesis. The p value (1.2457E-169) being much smaller than the significance level (0.05) proved that the Influenza mortality rates for the population above sixty-five is higher than that of the population below sixty-five. The initial results suggested that the elderly population is much more vulnerable.
+
+After completion of statistical analysis in Excel, I prepared a preliminary report of my work and findings thus far. The report can be found[here](https://coach-courses-us.s3.amazonaws.com/exercises/1034/52364/6196ecb325d1b5552d815fd3364f5487/DI--Task-1.10-Consolidating-Analytical-Insights.pdf)
+
+**Results**:
+* When is flu season?
+
+I continued to explore the data further in Tableau in order to extract more insights. The use of several visualization techniques allowed me to answer the questions relevant to the project objectives.
+
+Having lost the monthly detail when I combined the data sets, I had to use the cleaned Influenza deaths data to visualize the seasonality of the flu virus through the months of the year.
+
+The line chart below shows that Influenza related deaths occur throughout the year but is most severe during the winter months, with most fatalities occurring in January. The number of deaths is lowest in the summer months but begins to rise in the Fall months, before picking up even more during the Winter season
+
+Deaths by month
+![deathsbymonth](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/deathmonth.png?raw=true)
+
+* Which states are most affected?
+
+I used a choropleth map to visualize the total number of deaths for each state. California, New York, Texas, Pennsylvania, and Florida are the most affected states
+
+Deaths by state
+![deathsbystate](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/state.png?raw=true)
+
+* What populations are most vulnerable?
+
+Following up on the hypothesis, I used a scatterplot to compare the relationship between the elderly population and the total number of deaths. The results show that as the elderly population (above 65) in a state increases, so does the number of deaths. In the process I observed that Florida had a higher elderly population than New York but New York has more elderly deaths. This could potentially be due to a higher population density in New York, with perhaps fewer infrastructure per patient.
+
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/corr.png?raw=true)
+
+**Recommendation**:
+
+Since there are two main spikes in Influenza fatality during the year, one in the Fall season and another in the Winter season, I recommended that the staffing agency should distribute additional personnel at the onset of the Fall season in September and another batch at the onset of the Winter season in December.
+
+I also determined the level of staffing need according to the state. In the map below, the blue circles represent the need level (the darker and bigger circles indicate the highest priority). California and New York were given the highest priority due to the disproportionately higher population and number of deaths over time.
+
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study%20images/recc.png)
+
+**Conclusions**:
+
+From the analysis, I was able to determine that:
+* Influenza deaths are highest in the winter season (34% total between 2009 and 2017)
+* Generally, the most populous states have the highest number of deaths. These states are California, New York, Texas, Florida, and Pennsylvania
+* The elderly population (above 65 years old) has a significantly higher mortality rate thanthe rest of the population (under 65 years old). This is true in every state, regardless of population.
+
+**Reflection**:
+
+The biggest drawback to the accuracy of the results was the missing records for the number of deaths, which made it impossible to compare data for certain states and age groups. I couldn’t extract any insight for the population under 5 years old (which are also considered vulnerable) because all the records for that age group had been suppressed.
+
+Future work would involve sourcing relevant data on the vaccination rates for each state to investigate any relationship to the mortality rate. Additional data on the medical capacity of each state, specifically on provider to patient ratio would help to form a more robust picture on the staffing needs, particularly for the less populated states whose needs are not as immediately obvious as the more populous states. 
+
 
 ---
