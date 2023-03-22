@@ -4,9 +4,6 @@ modal-id: 1
 date: 2014-07-18
 img: flucover.png
 alt: image-alt
-project-date: November 2022
-client: 
-category:
 title: PREPARING FOR INFLUENZA SEASON
 summary: Predicting staffing needs based on an analysis of Influenza mortality trends in the United States
 
@@ -63,7 +60,7 @@ Raw Influenza data
 
 Since the range of potential values was between 0 and 10, I contemplated inputing the median value of 5 in place. However I ended up deciding to replace the suppressed values with 0 because I considered the range of values too small to affect the scope of the analysis. Also, any inputation could distort the data for many states, espescially in places like Alaska and District of Columbia where all the original records were suppressed.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/cleanflu.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/cleanflu.png?raw=true)
 Cleaned Influenza data
 
 **Data Integration**:
@@ -76,12 +73,12 @@ In addition, the age groupings for both data sets did not match. The Influenza d
 
 With the common variables of “State” and “Year”, both data sets were integrated (using VLOOKUP) to create a single data set.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/Integrated.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/Integrated.png?raw=true)
 Integrated data set
 
 Since the population figures varied widely across states, I also had to normalize the number of deaths according to state population in order to have a better comparison of Influenza mortality.
 
-![normalized](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/normalized.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/normalized.png?raw=true)
 Integrated data with Normalizations
 
 **Statistical Analysis**:
@@ -94,7 +91,9 @@ Before proceeding, I generated new variables by aggregating the number of deaths
 
 I then conducted a two-sample t-test to compare the mortality rates of the two test populations.
 
+
 * Null hypothesis: People below 65 years old have a higher influenza mortality rate than people above 65 years old.
+
 * Alternative hypothesis: People above 65 years old have a higher influenza mortality rate than people below 65 years old.
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/Ttest.png?raw=true)
@@ -104,7 +103,6 @@ From the results of the test, I rejected the null hypothesis. The p value (1.245
 After completion of statistical analysis in Excel, I prepared a preliminary report of my work and findings thus far. The report can be found[here](https://coach-courses-us.s3.amazonaws.com/exercises/1034/52364/6196ecb325d1b5552d815fd3364f5487/DI--Task-1.10-Consolidating-Analytical-Insights.pdf)
 
 **Results**:
-
 
 * When is flu season?
 
@@ -116,19 +114,17 @@ The line chart below shows that Influenza related deaths occur throughout the ye
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/deathbymonth.png)
 
-
 * Which states are most affected?
 
 I used a choropleth map to visualize the total number of deaths for each state. California, New York, Texas, Pennsylvania, and Florida are the most affected states
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/deathbystate.png)
 
-
 * What populations are most vulnerable?
 
 Following up on the hypothesis, I used a scatterplot to compare the relationship between the elderly population and the total number of deaths. The results show that as the elderly population (above 65) in a state increases, so does the number of deaths. In the process I observed that Florida had a higher elderly population than New York but New York has more elderly deaths. This could potentially be due to a higher population density in New York, with perhaps fewer infrastructure per patient.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/correlation.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/correlation.png?raw=true)
 
 **Recommendation**:
 
@@ -136,7 +132,7 @@ Since there are two main spikes in Influenza fatality during the year, one in th
 
 I also determined the level of staffing need according to the state. In the map below, the blue circles represent the need level (the darker and bigger circles indicate the highest priority). California and New York were given the highest priority due to the disproportionately higher population and number of deaths over time.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/reccomendations.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/reccomendations.png?raw=true)
 
 **Conclusions**:
 
