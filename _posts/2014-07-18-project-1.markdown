@@ -56,6 +56,8 @@ I then conducted extensive data cleaning and consistency checks on the Influenza
 The primary challenge during the cleaning phase, and indeed for the entire project was that about 82% of the death counts in the Influenza data were entered as “Suppressed” for privacy purposes in cases where the number of deaths was less than 10.   
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/rawflu.png?raw=true)
+
+<img src="https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/rawflu.png" width="700" height="400">
 Raw Influenza data
 
 Since the range of potential values was between 0 and 10, I contemplated inputing the median value of 5 in place. However I ended up deciding to replace the suppressed values with 0 because I considered the range of values too small to affect the scope of the analysis. Also, any inputation could distort the data for many states, espescially in places like Alaska and District of Columbia where all the original records were suppressed.
@@ -75,6 +77,8 @@ With the common variables of “State” and “Year”, both data sets were int
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/Integrated.png?raw=true)
 Integrated data set
+
+<img src="https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/Integrated.png" width="800" height="250">
 
 Since the population figures varied widely across states, I also had to normalize the number of deaths according to state population in order to have a better comparison of Influenza mortality.
 
