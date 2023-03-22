@@ -112,19 +112,19 @@ Having lost the monthly detail when I combined the data sets, I had to use the c
 
 The line chart below shows that Influenza related deaths occur throughout the year but is most severe during the winter months, with most fatalities occurring in January. The number of deaths is lowest in the summer months but begins to rise in the Fall months, before picking up even more during the Winter season
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/deathbymonth.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/deathbymonth.png?raw=true)
 
 * Which states are most affected?
 
 I used a choropleth map to visualize the total number of deaths for each state. California, New York, Texas, Pennsylvania, and Florida are the most affected states
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/deathbystate.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/deathbystate.png?raw=true)
 
 * What populations are most vulnerable?
 
 Following up on the hypothesis, I used a scatterplot to compare the relationship between the elderly population and the total number of deaths. The results show that as the elderly population (above 65) in a state increases, so does the number of deaths. In the process I observed that Florida had a higher elderly population than New York but New York has more elderly deaths. This could potentially be due to a higher population density in New York, with perhaps fewer infrastructure per patient.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/correlation.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/correlation.png?raw=false)
 
 **Recommendation**:
 
@@ -132,7 +132,7 @@ Since there are two main spikes in Influenza fatality during the year, one in th
 
 I also determined the level of staffing need according to the state. In the map below, the blue circles represent the need level (the darker and bigger circles indicate the highest priority). California and New York were given the highest priority due to the disproportionately higher population and number of deaths over time.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/reccomendations.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/reccomendations.png?raw=false)
 
 **Conclusions**:
 
