@@ -119,7 +119,7 @@ The line chart below shows that Influenza related deaths occur throughout the ye
 
 I used a choropleth map to visualize the total number of deaths for each state. California, New York, Texas, Pennsylvania, and Florida are the most affected states
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/testing2.jpg)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/testing2.jpg?raw=true)
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/deathbystate.png?raw=true)
 
