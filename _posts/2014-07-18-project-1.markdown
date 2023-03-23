@@ -55,7 +55,7 @@ I then conducted extensive data cleaning and consistency checks on the Influenza
 
 The primary challenge during the cleaning phase, and indeed for the entire project was that about 82% of the death counts in the Influenza data were entered as “Suppressed” for privacy purposes in cases where the number of deaths was less than 10.   
 
-<img src="https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/rawflu.png" width=700px height=400px>
+<img src="https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study./rawflu.png" width=700px height=400px>
 Raw Influenza data
 
 Since the range of potential values was between 0 and 10, I contemplated inputing the median value of 5 in place. However I ended up deciding to replace the suppressed values with 0 because I considered the range of values too small to affect the scope of the analysis. Also, any inputation could distort the data for many states, espescially in places like Alaska and District of Columbia where all the original records were suppressed.
