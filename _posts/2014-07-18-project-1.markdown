@@ -146,11 +146,15 @@ From the analysis, I was able to determine that:
 
 * The elderly population (above 65 years old) has a significantly higher mortality rate thanthe rest of the population (under 65 years old). This is true in every state, regardless of population.
 
+The complete Tableau storyboard, with all the findings and recommendations, is available [here](https://coach-courses-us.s3.amazonaws.com/exercises/722/52364/0654f6680dc17619b78f349e68fafeb9/Influenza-case-study.pdf)
+
 **REFLECTION**:
 
 The biggest drawback to the accuracy of the results was the missing records for the number of deaths, which made it impossible to compare data for certain states and age groups. I couldn’t extract any insight for the population under 5 years old (which are also considered vulnerable) because all the records for that age group had been suppressed.
 
 Future work would involve sourcing relevant data on the vaccination rates for each state to investigate any relationship to the mortality rate. Additional data on the medical capacity of each state, specifically on provider to patient ratio would help to form a more robust picture on the staffing needs, particularly for the less populated states whose needs are not as immediately obvious as the more populous states. 
+
+
 
 
 ---
