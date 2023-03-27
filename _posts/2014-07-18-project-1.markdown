@@ -101,7 +101,7 @@ I then conducted a two-sample t-test to compare the mortality rates of the two t
 
 From the results of the test, I rejected the null hypothesis. The p value (1.2457E-169) being much smaller than the significance level (0.05) proved that the Influenza mortality rates for the population above sixty-five is higher than that of the population below sixty-five. The initial results suggested that the elderly population is much more vulnerable.
 
-After completion of statistical analysis in Excel, I prepared a preliminary report of my work and findings thus far. The report can be found[here](https://coach-courses-us.s3.amazonaws.com/exercises/1034/52364/6196ecb325d1b5552d815fd3364f5487/DI--Task-1.10-Consolidating-Analytical-Insights.pdf)
+After completion of statistical analysis in Excel, I prepared a preliminary report of my work and findings thus far. The report can be found [here](https://coach-courses-us.s3.amazonaws.com/exercises/1034/52364/6196ecb325d1b5552d815fd3364f5487/DI--Task-1.10-Consolidating-Analytical-Insights.pdf)
 
 **RESULTS**:
 
