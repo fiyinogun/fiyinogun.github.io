@@ -55,11 +55,11 @@ I then conducted extensive data cleaning and consistency checks on the Influenza
 
 The primary challenge during the cleaning phase, and indeed for the entire project was that about 82% of the death counts in the Influenza data were entered as “Suppressed” for privacy purposes in cases where the number of deaths was less than 10.   
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/rawfludeaths.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/rawfludeaths.png?raw=true)
 
 Since the range of potential values was between 0 and 10, I contemplated inputing the median value of 5 in place. However I ended up deciding to replace the suppressed values with 0 because I considered the range of values too small to affect the scope of the analysis. Also, any inputation could distort the data for many states, espescially in places like Alaska and District of Columbia where all the original records were suppressed.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/cleanfludeaths.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/cleanfludeaths.png?raw=true)
 
 **Data Integration**:
 
@@ -71,12 +71,12 @@ In addition, the age groupings for both data sets did not match. The Influenza d
 
 With the common variables of “State” and “Year”, both data sets were integrated (using VLOOKUP) to create a single data set.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/integrated1.png?raw=true)
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/integrated2.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/integrated1.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/integrated2.png?raw=true)
 
 Since the population figures varied widely across states, I also had to normalize the number of deaths according to state population in order to have a better comparison of Influenza mortality.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/normalized.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/normalized.png?raw=true)
 
 **Statistical Analysis**:
 
@@ -93,7 +93,7 @@ I then conducted a two-sample t-test to compare the mortality rates of the two t
 
 * Alternative hypothesis: People above 65 years old have a higher influenza mortality rate than people below 65 years old.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/hypothesis%20test.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/hypothesisTest.png?raw=true)
 
 From the results of the test, I rejected the null hypothesis. The p value (1.2457E-169) being much smaller than the significance level (0.05) proved that the Influenza mortality rates for the population above sixty-five is higher than that of the population below sixty-five. The initial results suggested that the elderly population is much more vulnerable.
 
@@ -109,19 +109,19 @@ Having lost the monthly detail when I combined the data sets, I had to use the c
 
 The line chart below shows that Influenza related deaths occur throughout the year but is most severe during the winter months, with most fatalities occurring in January. The number of deaths is lowest in the summer months but begins to rise in the Fall months, before picking up even more during the Winter season
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/deathsbymonth.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/deathbymonth.png?raw=true)
 
 * Which states are most affected?
 
 I used a choropleth map to visualize the total number of deaths for each state. California, New York, Texas, Pennsylvania, and Florida are the most affected states
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/deathsbystate.png?raw=true)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/deathbystate.png?raw=true)
 
 * What populations are most vulnerable?
 
 Following up on the hypothesis, I used a scatterplot to compare the relationship between the elderly population and the total number of deaths. The results show that as the elderly population (above 65) in a state increases, so does the number of deaths. In the process I observed that Florida had a higher elderly population than New York but New York has more elderly deaths. This could potentially be due to a higher population density in New York, with perhaps fewer infrastructure per patient.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/correlation.png?raw=false)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/correlation.png?raw=false)
 
 
 **Recommendation**:
@@ -130,7 +130,7 @@ Since there are two main spikes in Influenza fatality during the year, one in th
 
 I also determined the level of staffing need according to the state. In the map below, the blue circles represent the need level (the darker and bigger circles indicate the highest priority). California and New York were given the highest priority due to the disproportionately higher population and number of deaths over time.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Influenza%20case%20study/reccomendations.png?raw=false)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/reccomendations.png?raw=false)
 
 **Conclusions**:
 
