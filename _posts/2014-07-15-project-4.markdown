@@ -45,8 +45,9 @@ summary: Analysis of NYC motor vehicle accidents data between 2017 and 2022
     
     * Geographical Visualizations
 
+
 * Tableau
-* 
+
     * Data Visualization and Presentation
     
     * Data dashboards 
@@ -92,7 +93,7 @@ From this scatterplot, I noticed a number of instances (mostly at the bottom lef
 **VISUAL ANALYSIS IN PYTHON**: 
 
 
-* **Geographical**:
+**Geographical**:
 
 
 To continue exploring the data in Python, I sourced geospatial data to visualize the occurrence of incidents across the city. I had hoped to use this data to make up for many of the missing location values in the original dataset, but owing to some technical difficulties, I had to abandon the idea. However, with the data I had to work with, I was able to map the total number of injuries and fatalities across the city. The maps revealed that Brooklyn has the highest number of injuries and fatalities while Staten Island has the least.
@@ -100,7 +101,7 @@ To continue exploring the data in Python, I sourced geospatial data to visualize
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/PythonMap.png?raw=true)
 
 
-* **Time Series**:
+**Time Series**:
 
 
 From a time series decomposition in Python, I visualized the total number of incidents between 2017 and 2022. I found a sharp decrease in the number of incidents around 2020, which is obviously due to the Covid pandemic lockdowns. The number of incidents began to rise again in 2021, after the lockdowns had ceased. 
@@ -115,25 +116,29 @@ It was very interesting to discover a seasonal pattern to the occurrence of inci
 After concluding data exploration and analysis in Python, I exported the data to Tableau for further visual analysis and presentation of results.
 
 
-**Which borough has the highest number of incidents over time?**
+
+**1) Which borough has the highest number of incidents over time?**
 
 Brooklyn has the highest number of motor vehicle collision incidents between 2017 and 2022, followed by Queens. Staten Island has the fewest number of incidents. It was also interesting to note that before 2020, Manhattan had more incidents than the Bronx, but after 2020, there were more incidents in the Bronx than in Manhattan. Perhaps this is due to a change in traffic patterns during the pandemic.
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/incidentsboro.png?raw=true)
 
 
-**How have accident patterns changed over time?**
+
+**2) How have accident patterns changed over time?**
 
 As noted earlier, there is a pattern where the number of incidents are lowest at the beginning and end of the year, and highest around the middle of the year. The steep drop in the chart below starts around December 2019 and is at the lowest point in April 2020 during the height of the pandemic lockdowns. Though the number of incidents have increased after the pandemic period, it is still well off the pre-pandemic levels.
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/TableauTime.png?raw=true)
 
 
-**Who is most likely to get injured, or die from a car accident?**
+
+**3) Who is most likely to get injured, or die from a car accident?**
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/injured.png?raw=true)
 
 Motorists (vehicle occupants) have by far the highest number of injuries.
+
 
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/Deaths.png?raw=true)
@@ -141,7 +146,8 @@ Motorists (vehicle occupants) have by far the highest number of injuries.
 Overall, more pedestrians (742) have been killed than motorists (673) and cyclists (133)
 
 
-**What are the leading causes of accidents?**
+
+**4) What are the leading causes of accidents?**
 
 Driver inattention and distraction is by far the leading causes of accidents in NYC
 
