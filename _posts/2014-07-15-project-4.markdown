@@ -3,6 +3,7 @@ layout: default
 modal-id: 4
 date: 2014-07-15
 img: collisionsCover.jpg
+alt: image-alt
 title: NYC MOTOR VEHICLE COLLISIONS
 summary: Analysis of NYC motor vehicle accidents data between 2017 and 2022
 
@@ -157,3 +158,4 @@ There are many ways to improve upon this project including using time series for
 
 See the [full presentation](https://public.tableau.com/app/profile/fiyin4479/viz/NYCMotorVehicleCollisions_16778692020470/Collisions) and the [GitHub repository](https://github.com/fiyinogun/NYC-Motor-Vehicle-Collisions) containing all the code used to process the data.
 
+---
