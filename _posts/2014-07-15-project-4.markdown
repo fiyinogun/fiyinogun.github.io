@@ -33,16 +33,23 @@ summary: Analysis of NYC motor vehicle accidents data between 2017 and 2022
 * Python: pandas, numpy, matplotlib, seaborn, folium, sklearn
 
     * Data Wrangling
+    
     * Exploratory Analysis
+    
     * Grouping and Aggregating data
+    
     * Deriving Variables
+    
     * Visual analysis
+    
     * Geographical Visualizations
 
 * Tableau
+* 
     * Data Visualization and Presentation
     
     * Data dashboards 
+
 
 
 
@@ -79,15 +86,21 @@ The scatterplot confirmed that as the number of persons injured increases, so do
 
 From this scatterplot, I noticed a number of instances (mostly at the bottom left of the plot) where the number of motorists injured exceeds the total number of persons injured. This represents an inconsistency within the dataset. I investigated this by checking for cases in the entire dataset where the total number of persons injured does not match the sum of all the categories of injured persons (i.e., “motorists”, “cyclists”, and “pedestrians”). These cases accounted for less than one percent of the dataset. This error is likely due again to the manual mode of data entry. I found the same situation in the number of persons killed variables, but to a much lesser degree. 
 
+
+
 **VISUAL ANALYSIS IN PYTHON**: 
 
+
 * **Geographical**:
+
 
 To continue exploring the data in Python, I sourced geospatial data to visualize the occurrence of incidents across the city. I had hoped to use this data to make up for many of the missing location values in the original dataset, but owing to some technical difficulties, I had to abandon the idea. However, with the data I had to work with, I was able to map the total number of injuries and fatalities across the city. The maps revealed that Brooklyn has the highest number of injuries and fatalities while Staten Island has the least.
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/PythonMap.png)
 
+
 * **Time Series**:
+
 
 From a time series decomposition in Python, I visualized the total number of incidents between 2017 and 2022. I found a sharp decrease in the number of incidents around 2020, which is obviously due to the Covid pandemic lockdowns. The number of incidents began to rise again in 2021, after the lockdowns had ceased. 
 
