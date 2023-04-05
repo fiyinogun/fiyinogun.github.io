@@ -63,7 +63,7 @@ The variables containing location information all had a large amount of missing 
 
 In the variable containing the types of vehicles involved in accidents, there was no consistent format to the entered data. Many values were either repeated or misspelled. There were quite a few entries that were altogether unintelligible. As these errors ran through entire dataset, there wasn’t much I could do.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/type1error.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/type1error.png?raw=true)
 
 **EXPLORING RELATIONSHIPS**:
 
@@ -75,12 +75,12 @@ After concluding the exploratory analysis phase I began exploring the relationsh
 
 * Strong relationship (correlation = 0.68) between the total number of persons killed the number of pedestrians killed. I found this interesting because it shows that pedestrians are just as likely to die from a car crash/collision as motorists.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/heatmap.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/heatmap.png?raw=true)
 
 
 I continued exploring these relationships by using a scatterplot to visualize the general trend of the data points between the variables.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/scatterplot.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/scatterplot.png?raw=true)
 
 The scatterplot confirmed that as the number of persons injured increases, so does the number of motorists, which indicates that motorists (vehicle occupants) were the group most likely to get injured from a car accident.
 
@@ -96,7 +96,7 @@ From this scatterplot, I noticed a number of instances (mostly at the bottom lef
 
 To continue exploring the data in Python, I sourced geospatial data to visualize the occurrence of incidents across the city. I had hoped to use this data to make up for many of the missing location values in the original dataset, but owing to some technical difficulties, I had to abandon the idea. However, with the data I had to work with, I was able to map the total number of injuries and fatalities across the city. The maps revealed that Brooklyn has the highest number of injuries and fatalities while Staten Island has the least.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/PythonMap.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/PythonMap.png?raw=true)
 
 
 * **Time Series**:
@@ -106,7 +106,7 @@ From a time series decomposition in Python, I visualized the total number of inc
 
 It was very interesting to discover a seasonal pattern to the occurrence of incidents over time. I found that incidents are lowest both at the beginning and at the end of the year, and highest around the middle of the year. The period of the fewest incidents corresponds to the winter season in New York City. Though this scope of this analysis did not cover any information on traffic volume, one can assume that traffic volume is probably lowest during the winter season across the city.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/PythonTime.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/PythonTime.png?raw=true)
 
 
 **RESULTS**:
@@ -118,24 +118,24 @@ After concluding data exploration and analysis in Python, I exported the data to
 
 Brooklyn has the highest number of motor vehicle collision incidents between 2017 and 2022, followed by Queens. Staten Island has the fewest number of incidents. It was also interesting to note that before 2020, Manhattan had more incidents than the Bronx, but after 2020, there were more incidents in the Bronx than in Manhattan. Perhaps this is due to a change in traffic patterns during the pandemic.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/incidentsboro.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/incidentsboro.png?raw=true)
 
 
 **How have accident patterns changed over time?**
 
 As noted earlier, there is a pattern where the number of incidents are lowest at the beginning and end of the year, and highest around the middle of the year. The steep drop in the chart below starts around December 2019 and is at the lowest point in April 2020 during the height of the pandemic lockdowns. Though the number of incidents have increased after the pandemic period, it is still well off the pre-pandemic levels.
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/TableauTime.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/TableauTime.png?raw=true)
 
 
 **Who is most likely to get injured, or die from a car accident?**
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/injured.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/injured.png?raw=true)
 
 Motorists (vehicle occupants) have by far the highest number of injuries.
 
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/Deaths.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/Deaths.png?raw=true)
 
 Overall, more pedestrians (742) have been killed than motorists (673) and cyclists (133)
 
@@ -144,7 +144,7 @@ Overall, more pedestrians (742) have been killed than motorists (673) and cyclis
 
 Driver inattention and distraction is by far the leading causes of accidents in NYC
 
-![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/Causes.png)
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/Causes.png?raw=true)
 
 
 **CONCLUSIONS**:
