@@ -2,12 +2,12 @@
 layout: default
 modal-id: 5
 date: 2014-07-14
-img: gamecoCover.jpg
-alt: image-alt
+img: 
+alt:
 project-date: April 2014
 client: 
 category: 
-title: GAMECO
-summary: Analysis of global video game sales between 1980 and 2016
+title:
+summary: 
 
 ---
