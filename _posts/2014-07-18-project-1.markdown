@@ -9,8 +9,6 @@ summary: Predicting staffing needs based on an analysis of Influenza mortality t
 
 ---
 
-<p align="justify"><font size="4"
-
 **BACKGROUND**: 
 
 The United States has an Influenza season where more people than usual suffer from the flu. Some people develop serious complications and end up in the hospital. Hospitals and clinics need additional staff to adequately treat these extra patients.
