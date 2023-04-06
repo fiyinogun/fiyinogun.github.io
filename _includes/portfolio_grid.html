@@ -1,4 +1,4 @@
- <!-- Portfolio Grid Section -->
+    <!-- Portfolio Grid Section -->
     <section id="portfolio" class="success">
         <div class="container portfolio-flex-grid">
             <div class="row">
@@ -17,9 +17,10 @@
                                 </div>
                             </div>
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                        <p style="text-align:center"><b>{{ post.title }}</b></p>
-                        <p style="text-align:left">{{ post.summary }}
                         </a>
+                        <br>
+                        <p style="text-align:center"><b>{{ post.title }}</b></p>
+                        <p style="text-align:center"><b>{{ post.summary }}</b></p>
                     </div>
                 {% endfor %}
             </div>
