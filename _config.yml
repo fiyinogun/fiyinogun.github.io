@@ -4,7 +4,7 @@ email: fiyinogundele@gmail.com
 url: https://fiyinogun.github.io
 description: "This is my data analytics portfolio website"
 keywords: "your keywords, separated by commas"
-skills: "Data Analyst"
+skills: "DATA ANALYST"
 meta_author: Ogundele Fiyinfoluwa
 
 # Google webmaster tools
@@ -35,7 +35,7 @@ footer:
   copyright: 
   location: Location
   social: Around the Web
-  credits: Credits
+  credits:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
