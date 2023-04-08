@@ -45,9 +45,9 @@ This data set contains general population estimates for U.S. state counties from
     
     * Creating data dashboards and storyboards
 
-<br>
+<br><br>
 
-### Analysis process:
+**Analysis process**:
   
 The first stage of the project was to source the data and check for its reliability. As both data sets came from reputable U.S. government organizations, they were considered reliable for the purpose of the analysis.
 
@@ -120,9 +120,9 @@ From the results of the test, I rejected the null hypothesis. The p value (1.245
 
 After completion of statistical analysis in Excel, I prepared a preliminary report of my work and findings thus far. The report can be found [here](https://coach-courses-us.s3.amazonaws.com/exercises/1034/52364/6196ecb325d1b5552d815fd3364f5487/DI--Task-1.10-Consolidating-Analytical-Insights.pdf)
 
-<br>
+<br><br>
 
-### **Results**:
+**Results**:
 
 <br>
 
@@ -152,8 +152,9 @@ Following up on the hypothesis, I used a scatterplot to compare the relationship
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/correlation.png?raw=false)
 
+<br>
 
-### Recommendations:
+**Recommendations:
 
 Since there are two main spikes in Influenza fatality during the year, one in the Fall season and another in the Winter season, I recommended that the staffing agency should distribute additional personnel at the onset of the Fall season in September and another batch at the onset of the Winter season in December.
 
