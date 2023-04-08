@@ -9,11 +9,17 @@ summary: Analysis of NYC motor vehicle accidents data between 2017 and 2022
 
 ---
 
-**BACKGROUND**: The New York Police department collects data on motor vehicle collisions across the city where someone is injured or killed, or where there is at least $1000 worth of damage.
+<br>
 
-**OBJECTIVE**: Perform an analysis of NYC accidents data in order to uncover patterns and trends in the occurrence of incidents over the most recent five years (2017 - 2022)
+**Background**: The New York Police department collects data on motor vehicle collisions across the city where someone is injured or killed, or where there is at least $1000 worth of damage.
 
-**KEY QUESTIONS**:
+<br>
+
+**Objective**: Perform an analysis of NYC accidents data in order to uncover patterns and trends in the occurrence of incidents over the most recent five years (2017 - 2022)
+
+<br>
+
+**Key questions**:
 
 * Which borough has the highest frequency of accidents?
 
@@ -23,13 +29,17 @@ summary: Analysis of NYC motor vehicle accidents data between 2017 and 2022
 
 * What are the leading causes of accidents?
 
-**DATA**:
+<br>
+
+**Data**:
 
 * [New York City Motor Vehicle Collisions - Crashes data](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95) sourced from NYC Open Data which hosts free public data published by New York City agencies and its partners. The dataset used for this analysis was accessed on January 30, 2023.  It contains information on accidents in New York City from July 2012 to January 2023.
 
 * [NYC geospatial data](https://data.cityofnewyork.us/City-Government/Borough-Boundaries/tqmj-j8zm) containing location coordinates for the five boroughs of New York City
 
-**TOOLS AND SKILLS**:
+<br>
+
+**Tools and skills**:
 
 * Python: pandas, numpy, matplotlib, seaborn, folium, sklearn
 
@@ -52,10 +62,9 @@ summary: Analysis of NYC motor vehicle accidents data between 2017 and 2022
     
     * Data dashboards 
 
+<br>
 
-
-
-### **ANALYSIS PROCESS**:
+### Analysis process:
 
 I started by exploring the data in Python to familiarize myself with its contents. Since my analysis was to focus only on the most recent five years (2017 - 2022), I removed data for the years 2012 to 2021, as well as data for January 2023. I continued further data exploration before beginning an extensive process of consistency checks and data cleaning, including removing a number of variables which were irrelevant to the purposes of the analysis, renaming and shortening variable names for easier reference, changing data types where needed, checking for duplicate data entries, performing summary statistical checks, and so on.
 
@@ -67,7 +76,9 @@ In the variable containing the types of vehicles involved in accidents, there wa
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/type1error.png?raw=true)
 
-**EXPLORING RELATIONSHIPS**:
+<br>
+
+**Exploring relationships**:
 
 After concluding the exploratory analysis phase I began exploring the relationships that existed between some of the variables in the data. I started by deriving new variables from the existing ones. I then used a correlation matrix heatmap to visualize these relationships. Most of the variables had either very weak or no correlations. However, I did find that a few variables which had strong positive correlations:
 
@@ -79,6 +90,7 @@ After concluding the exploratory analysis phase I began exploring the relationsh
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/heatmap.png?raw=true)
 
+<br>
 
 I continued exploring these relationships by using a scatterplot to visualize the general trend of the data points between the variables.
 
@@ -89,19 +101,22 @@ The scatterplot confirmed that as the number of persons injured increases, so do
 From this scatterplot, I noticed a number of instances (mostly at the bottom left of the plot) where the number of motorists injured exceeds the total number of persons injured. This represents an inconsistency within the dataset. I investigated this by checking for cases in the entire dataset where the total number of persons injured does not match the sum of all the categories of injured persons (i.e., “motorists”, “cyclists”, and “pedestrians”). These cases accounted for less than one percent of the dataset. This error is likely due again to the manual mode of data entry. I found the same situation in the number of persons killed variables, but to a much lesser degree. 
 
 
+<br>
 
-**VISUAL ANALYSIS IN PYTHON**: 
+**Visual analysis in Python**: 
 
+<br>
 
-**Geographical**:
+* **Geographical**:
 
 
 To continue exploring the data in Python, I sourced geospatial data to visualize the occurrence of incidents across the city. I had hoped to use this data to make up for many of the missing location values in the original dataset, but owing to some technical difficulties, I had to abandon the idea. However, with the data I had to work with, I was able to map the total number of injuries and fatalities across the city. The maps revealed that Brooklyn has the highest number of injuries and fatalities while Staten Island has the least.
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/PythonMap.png?raw=true)
 
+<br>
 
-**Time Series**:
+* **Time Series**:
 
 
 From a time series decomposition in Python, I visualized the total number of incidents between 2017 and 2022. I found a sharp decrease in the number of incidents around 2020, which is obviously due to the Covid pandemic lockdowns. The number of incidents began to rise again in 2021, after the lockdowns had ceased. 
@@ -110,57 +125,61 @@ It was very interesting to discover a seasonal pattern to the occurrence of inci
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/PythonTime.png?raw=true)
 
+<br>
 
-**RESULTS**:
+#### Results:
 
 After concluding data exploration and analysis in Python, I exported the data to Tableau for further visual analysis and presentation of results.
 
+<br>
 
-
-**1) Which borough has the highest number of incidents over time?**
+**Which borough has the highest number of incidents over time?**
 
 Brooklyn has the highest number of motor vehicle collision incidents between 2017 and 2022, followed by Queens. Staten Island has the fewest number of incidents. It was also interesting to note that before 2020, Manhattan had more incidents than the Bronx, but after 2020, there were more incidents in the Bronx than in Manhattan. Perhaps this is due to a change in traffic patterns during the pandemic.
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/incidentsboro.png?raw=true)
 
+<br>
 
-
-**2) How have accident patterns changed over time?**
+**How have accident patterns changed over time?**
 
 As noted earlier, there is a pattern where the number of incidents are lowest at the beginning and end of the year, and highest around the middle of the year. The steep drop in the chart below starts around December 2019 and is at the lowest point in April 2020 during the height of the pandemic lockdowns. Though the number of incidents have increased after the pandemic period, it is still well off the pre-pandemic levels.
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/TableauTime.png?raw=true)
 
+<br>
 
-
-**3) Who is most likely to get injured, or die from a car accident?**
+**Who is most likely to get injured, or die from a car accident?**
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/injured.png?raw=true)
 
 Motorists (vehicle occupants) have by far the highest number of injuries.
 
-
+<br>
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/Deaths.png?raw=true)
 
 Overall, more pedestrians (742) have been killed than motorists (673) and cyclists (133)
 
+<br>
 
-
-**4) What are the leading causes of accidents?**
+**What are the leading causes of accidents?**
 
 Driver inattention and distraction is by far the leading causes of accidents in NYC
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/Causes.png?raw=true)
 
+<br>
 
-**CONCLUSIONS**:
+**Conclusions**:
 
 This analysis only covered a few aspects of this extensive data set. The biggest limitation I had to deal with were the missing location variables, which prevented me from getting a clearer picture of the geographical variations in the data. I had hoped to be able to finally deal with this problem by using Tableau’s in-built mapping system. When I mapped the data using the coordinates in Tableau, I discovered that there were actually many instances where an accident location had been misreported.  Moreover, the size of the data was too large for Tableau’s mapping system to handle individual location coordinates.
 
 In other areas, I attempted to use a linear regression and a cluster analysis in Python to explore the data further, but I didn’t get any significant results.
 
 There are many ways to improve upon this project including using time series forecasting to predict future outcomes, and sourcing traffic volume data to explore the relationships between traffic volume and accident occurrence.
+
+<br>
 
 See the [full presentation](https://public.tableau.com/app/profile/fiyin4479/viz/NYCMotorVehicleCollisions_16778692020470/Collisions) and the [GitHub repository](https://github.com/fiyinogun/NYC-Motor-Vehicle-Collisions) containing all the code used to process the data.
 
