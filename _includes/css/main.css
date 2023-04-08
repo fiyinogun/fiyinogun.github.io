@@ -484,19 +484,20 @@ footer .footer-below {
 }
 
 
-#title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
+  #portfolio > div > div.portfolio-flex-row > div:nth-child(1) > a > img {
+    height: auto;
+    width: 300;
   }
 
   #portfolio > div > div.portfolio-flex-row > div:nth-child(2) > a > img {
-    height: 489px;
-    width: auto;
+    height: auto;
+    width: 300;
   }
 
-  #title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
+  #portfolio > div > div.portfolio-flex-row > div:nth-child(3) > a > img {
+    height: auto;
+    width: 300;
   }
+
+  
+
