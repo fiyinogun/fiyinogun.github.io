@@ -8,23 +8,23 @@ title: PREPARING FOR INFLUENZA SEASON
 summary: Predicting staffing needs based on an analysis of Influenza mortality trends in the United States
 
 ---
+<br>
 
-**BACKGROUND**: 
+**Background**: The United States has an Influenza season where more people than usual suffer from the flu. Some people develop serious complications and end up in the hospital. Hospitals and clinics need additional staff to adequately treat these extra patients.
 
-The United States has an Influenza season where more people than usual suffer from the flu. Some people develop serious complications and end up in the hospital. Hospitals and clinics need additional staff to adequately treat these extra patients.
+**Goal**: To help a medical staffing agency that provides temporary workers to hospitals and clinics on an as needed basis
 
-**GOAL**: To help a medical staffing agency that provides temporary workers to hospitals and clinics on an as needed basis
+**Objective**: Determine when and where to send staff for the upcoming flu season
 
-**OBJECTIVE**: Determine when and where to send staff for the upcoming flu season
-
-**DATA SOURCE**:
+**Data source**:
 * [Influenza deaths data](https://coach-courses-us.s3.amazonaws.com/public/courses/da_program/CDC_Influenza_Deaths_edited.xlsx) from the [CDC](https://wonder.cdc.gov/ucd-icd10.html):
 This data set contains information on Influenza deaths in the United States from 2009 to 2017. The data is categorized by state, year, month, age group, and number of deaths.
 
 * [Population data](https://coach-courses-us.s3.amazonaws.com/public/courses/data-immersion/A1-A2_Influenza_Project/Census_Population_transformed_202101.csv) from the U.S. Census Bureau:
 This data set contains general population estimates for U.S. state counties from 2009 to 2017. The population figures are further broken down by gender and age groups
 
-**TOOLS AND SKILLS**:
+**Tools and skills**:
+
 * Microsoft Excel: 
     
     * Data cleaning and exploratory analysis
@@ -41,7 +41,9 @@ This data set contains general population estimates for U.S. state counties from
     
     * Creating data dashboards and storyboards
 
-**ANALYSIS PROCESS**:
+<br>
+
+### **Analysis process**:
   
 The first stage of the project was to source the data and check for its reliability. As both data sets came from reputable U.S. government organizations, they were considered reliable for the purpose of the analysis.
 
@@ -55,15 +57,21 @@ I then conducted extensive data cleaning and consistency checks on the Influenza
 
 The primary challenge during the cleaning phase, and indeed for the entire project was that about 82% of the death counts in the Influenza data were entered as “Suppressed” for privacy purposes in cases where the number of deaths was less than 10.   
 
+<br>
+
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/rawfludeaths.png?raw=true)
 
 Since the range of potential values was between 0 and 10, I contemplated inputing the median value of 5 in place. However I ended up deciding to replace the suppressed values with 0 because I considered the range of values too small to affect the scope of the analysis. Also, any inputation could distort the data for many states, espescially in places like Alaska and District of Columbia where all the original records were suppressed.
 
+<br> 
+
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/cleanfludeaths.png?raw=true)
 
-**DATA INTEGRATION**:
+<br>
 
-To integrate the two cleaned data sets some transformations were necessary. 
+**Data integration**:
+
+To integrate the two cleaned data sets, some transformations were necessary. 
 
 The number of deaths in the Influenza data were originally categorized by month while the population figures in the census data were categorized by year. To match the two, I aggregated the death counts by year, in the process losing the monthly detail. 
 
@@ -73,15 +81,21 @@ With the common variables of “State” and “Year”, both data sets were int
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/integrated1.png?raw=true)
 
+<br>
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/integrated2.png?raw=true)
 
+<br>
+
 Since the population figures varied widely across states, I also had to normalize the number of deaths according to state population in order to have a better comparison of Influenza mortality.
 
+<br>
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/normalized.png?raw=true)
 
-**STATISTICAL ANALYSIS**:
+<br>
+
+**Statistical analysis**:
 
 With the data explored, cleaned, and integrated, I could now tackle the question posed by thehypothesis.
 
@@ -96,14 +110,21 @@ I then conducted a two-sample t-test to compare the mortality rates of the two t
 
 * Alternative hypothesis: People above 65 years old have a higher influenza mortality rate than people below 65 years old.
 
+<br>
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/hypothesisTest.png?raw=true)
+
+<br>
 
 From the results of the test, I rejected the null hypothesis. The p value (1.2457E-169) being much smaller than the significance level (0.05) proved that the Influenza mortality rates for the population above sixty-five is higher than that of the population below sixty-five. The initial results suggested that the elderly population is much more vulnerable.
 
 After completion of statistical analysis in Excel, I prepared a preliminary report of my work and findings thus far. The report can be found [here](https://coach-courses-us.s3.amazonaws.com/exercises/1034/52364/6196ecb325d1b5552d815fd3364f5487/DI--Task-1.10-Consolidating-Analytical-Insights.pdf)
 
-**RESULTS**:
+<br>
+
+### **Results**:
+
+<br>
 
 **When is flu season?**
 
@@ -115,11 +136,15 @@ The line chart below shows that Influenza related deaths occur throughout the ye
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/deathbymonth.png?raw=true)
 
+<br>
+
 **Which states are most affected?**
 
 I used a choropleth map to visualize the total number of deaths for each state. California, New York, Texas, Pennsylvania, and Florida are the most affected states
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/deathbystate.png?raw=true)
+
+<br>
 
 **What populations are most vulnerable?**
 
@@ -128,7 +153,7 @@ Following up on the hypothesis, I used a scatterplot to compare the relationship
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/correlation.png?raw=false)
 
 
-**RECOMMENDATION**:
+**Recommendations**:
 
 Since there are two main spikes in Influenza fatality during the year, one in the Fall season and another in the Winter season, I recommended that the staffing agency should distribute additional personnel at the onset of the Fall season in September and another batch at the onset of the Winter season in December.
 
@@ -136,7 +161,9 @@ I also determined the level of staffing need according to the state. In the map 
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/reccomendations.png?raw=false)
 
-**CONCLUSION**:
+<br>
+
+**Conclusions**:
 
 From the analysis, I was able to determine that:
 
@@ -148,7 +175,9 @@ From the analysis, I was able to determine that:
 
 The complete Tableau storyboard, with all the findings and recommendations, is available [here](https://coach-courses-us.s3.amazonaws.com/exercises/722/52364/0654f6680dc17619b78f349e68fafeb9/Influenza-case-study.pdf)
 
-**REFLECTION**:
+<br>
+
+**Reflection**:
 
 The biggest drawback to the accuracy of the results was the missing records for the number of deaths, which made it impossible to compare data for certain states and age groups. I couldn’t extract any insight for the population under 5 years old (which are also considered vulnerable) because all the records for that age group had been suppressed.
 
