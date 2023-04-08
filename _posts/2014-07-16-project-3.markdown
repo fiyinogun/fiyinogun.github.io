@@ -139,7 +139,7 @@ I also created another variable to categorize the spending habits of different c
 
 **Conclusion**
 
-The profile creation and data segmentation was the most involved part of the analysis, and it required experimenting with different variables and aggregations before I could develop the profiles. I experimented with customers’ age, income, state, family size, number of dependents, and specific types of products. Most of these characteristics did not produce significant insights upon comparison but I compiled a few of them in the [final report](https://github.com/fiyinogun/Instacart/blob/main/04. Sent to client/Final Report.xlsx). There are still many potential profiles to be explored and created. Since the data set was so large with many different variables, I had to limit myself to just a few segments to investigate.
+The profile creation and data segmentation was the most involved part of the analysis, and it required experimenting with different variables and aggregations before I could develop the profiles. I experimented with customers’ age, income, state, family size, number of dependents, and specific types of products. Most of these characteristics did not produce significant insights upon comparison but I compiled a few of them in the [final report](https://github.com/fiyinogun/Instacart/raw/main/04.%20Sent%20to%20client/Instacart%20Final%20Report%20Fiyinfoluwa%20Ogundele.xlsx). There are still many potential profiles to be explored and created. Since the data set was so large with many different variables, I had to limit myself to just a few segments to investigate.
 
 <br>
 
