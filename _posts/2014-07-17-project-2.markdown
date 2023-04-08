@@ -61,7 +61,7 @@ summary: Analysis of a database for a movie rental company looking to transition
 
 <br>
 
-### Analysis:
+#### Analysis:
 
 The first step was to extract an entity relationship diagram in order to visualize the relationship between the entities in the database. This was done using DbVisualizer.
 
@@ -79,7 +79,7 @@ See the complete [data dictionary](https://coach-courses-us.s3.amazonaws.com/exe
 
 <br>
 
-### Answering business questions:
+#### Answering business questions:
 
 The next step was to query the database in order to answer specific business questions and to extract insights that would satisfy the objectives of the project. I used the ERD and the data dictionary to locate the relevant tables needed to answer each question. In PostgreSQL, I used multiple joins, subqueries, and common table expressions, where applicable, in order to generate data tables. I then exported and compiled the data to be used for visualizations in Tableau.
 
