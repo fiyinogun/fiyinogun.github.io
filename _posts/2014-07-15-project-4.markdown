@@ -64,7 +64,7 @@ summary: Analysis of NYC motor vehicle accidents data between 2017 and 2022
 
 <br>
 
-### Analysis process:
+#### Analysis process:
 
 I started by exploring the data in Python to familiarize myself with its contents. Since my analysis was to focus only on the most recent five years (2017 - 2022), I removed data for the years 2012 to 2021, as well as data for January 2023. I continued further data exploration before beginning an extensive process of consistency checks and data cleaning, including removing a number of variables which were irrelevant to the purposes of the analysis, renaming and shortening variable names for easier reference, changing data types where needed, checking for duplicate data entries, performing summary statistical checks, and so on.
 
