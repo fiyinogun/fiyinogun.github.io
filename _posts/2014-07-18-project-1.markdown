@@ -51,7 +51,7 @@ This data set contains general population estimates for U.S. state counties from
 
 <br><br>
 
-### Analysis process:
+#### Analysis process:
   
 The first stage of the project was to source the data and check for its reliability. As both data sets came from reputable U.S. government organizations, they were considered reliable for the purpose of the analysis.
 
@@ -125,7 +125,7 @@ After completion of statistical analysis in Excel, I prepared a preliminary repo
 
 <br>
 
-### Results:
+#### Results:
 
 **When is flu season?**
 
