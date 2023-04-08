@@ -426,15 +426,15 @@ footer .footer-below {
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .portfolio-modal .modal-content img {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .portfolio-modal .modal-content .item-details {
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .portfolio-modal .close-modal {
