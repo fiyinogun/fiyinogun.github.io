@@ -2,7 +2,7 @@
 layout: default
 modal-id: 4
 date: 2014-07-15
-img: collisionsCover2.jpg
+img: collisionsCover2.png
 alt: image-alt
 title: NYC MOTOR VEHICLE COLLISIONS
 summary: Analysis of NYC motor vehicle accidents data between 2017 and 2022
