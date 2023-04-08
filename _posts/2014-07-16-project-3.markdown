@@ -11,18 +11,23 @@ title: INSTACART BASKET ANALYSIS
 summary: Analysis of open-source Instacart data to identify sales patterns and customer purchasing behavior
 
 ---
+ 
+<br>
 
-### **BACKGROUND**: 
+**Background**: 
 
 Instacart is an online grocery store looking to uncover more information about its sales pattern. They are particularly interested in the variety of customers in their database along with their purchasing behaviors. They want to target different customers with applicable marketing campaigns. This analysis is to inform what this strategy might look like to ensure Instacart targets the right customer profiles with the appropriate products.
 Objectives: Derive insights and suggest strategies for better segmentation of data based on sales patterns and customer purchasing behavior.
 
-**DATA** : 
+<br>
+
+**Data** : 
 
 The data used for this analysis is a set of open-source [datasets](https://s3.amazonaws.com/coach-courses-us/public/courses/data-immersion/A4/A4_Data_Assets/4.3_orders_products.zip) (orders and products) from [Instacart](https://www.instacart.com/datasets/grocery-shopping-2017). They contain information on over 30 million grocery orders in 2017. An auxiliary data set on [customer data](https://s3.amazonaws.com/coach-courses-us/public/courses/data-immersion/A4/A4_Data_Assets/customers.zip) was provided by CareerFoundry for educational purposes.
 
+<br>
 
-**TOOLS AND SKILLS**:
+**Tools and skills**:
 
 * Python: Pandas, Numpy, Scipy, Matplotlib, Seaborn
 
@@ -43,9 +48,9 @@ The data used for this analysis is a set of open-source [datasets](https://s3.am
     
     *  Report Compilation
 
+<br>
 
-
-### **ANALYSIS PROCESS**:
+#### ANALYSIS PROCESS:
 
 I started out by exploring both datasets to gain a better understanding of their contents. I performed some data wrangling steps, including dropping unnecessary columns, renaming columns with unintuitive names, and changing data types where applicable. I continued this process by performing consistency checks on, including checking for, and renaming duplicates, and checking for missing values.
 
@@ -68,12 +73,13 @@ After completing all the necessary wrangling steps and consistency checks, I com
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Instacart%20case%20study/merge.png?raw=true)
 
+<br>
 
-**ANSWERING BUSINESS QUESTIONS**:
+#### Answering business questions:
 
 Now with the desired dataset for analysis, I began investigating the data more thoroughly in order to tackle and provide answers for the objectives of the project. This process required deriving new variables, grouping, and aggregating different variables, and visualizing various elements of the data.
 
-
+<br>
 
 **The sales team needs to know what the busiest days of the week and hours of the day are (i.e., the days and times with the most orders) in order to schedule ads at times when there are fewer orders.**
 
@@ -87,7 +93,7 @@ Using a similar process, I found that most orders are placed between 10am and 4p
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Instacart%20case%20study/busyhours.png?raw=true)
 
-
+<br>
 
 **Instacart has a lot of products with different price tags. Marketing and sales want to use simpler price range groupings to help direct their efforts.**
 
@@ -103,7 +109,7 @@ The pie chart below shows that such “Mid-range products” above $5 and less t
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Instacart%20case%20study/pricespie.png?raw=true)
 
-
+<br>
 
 **Are there certain types of products that are more popular than others? The marketing and sales teams want to know which departments have the highest frequency of product orders.**
 
@@ -111,7 +117,7 @@ I found that the produce department accounts for a significant amount of orders.
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Instacart%20case%20study/deptfreq.png?raw=true)
 
-
+<br>
 
 **The marketing and sales teams are particularly interested in the different types of customers in their system and how their ordering behaviors differ.**
 
@@ -121,6 +127,7 @@ I then used the crosstab function to compare the result of this derivation to th
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Instacart%20case%20study/pricesloyal.png?raw=true)
 
+<br>
 
 I also created another variable to categorize the spending habits of different customers. I used the average amount a customer has spent to determine if they were high or low spenders. Where the average amount spent is less than $10, I flagged such a customer as a low spender; where the average is 10 or more, I flagged the customer as a low spender. From this, I discovered that majority of the customers in the system are low spenders, spending an average of ten dollars or less.
 
@@ -128,9 +135,13 @@ I also created another variable to categorize the spending habits of different c
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Instacart%20case%20study/spending.png?raw=true)
 
-**CONCLUSION**
+<br>
+
+**Conclusion**
 
 The profile creation and data segmentation was the most involved part of the analysis, and it required experimenting with different variables and aggregations before I could develop the profiles. I experimented with customers’ age, income, state, family size, number of dependents, and specific types of products. Most of these characteristics did not produce significant insights upon comparison but I compiled a few of them in the [final report](https://github.com/fiyinogun/Instacart/blob/main/04. Sent to client/Final Report.xlsx). There are still many potential profiles to be explored and created. Since the data set was so large with many different variables, I had to limit myself to just a few characteristics to investigate.
+
+<br>
 
 See the [Github repository](https://github.com/fiyinogun/Instacart) containing all the Jupyter notebook scripts.
 
