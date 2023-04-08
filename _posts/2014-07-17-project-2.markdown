@@ -2,7 +2,7 @@
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: RockCover2.png
+img: RockCover.png
 alt: image-alt
 title: ROCKBUSTER MOVIE RENTALS
 project-date: 
