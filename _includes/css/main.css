@@ -472,6 +472,14 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
+
+
+#portfolio > div > div.portfolio-flex-row > div:nth-child(1) > a > img{
+    height: 140px;
+    width: 230px;
+    
+    
+
 .navbar-nav>.active>a {
     background-color: #{{ site.color.secondary-dark }} !important;
 }
@@ -484,9 +492,23 @@ footer .footer-below {
 }
 
 
-  #portfolio > div > div.portfolio-flex-row > div:nth-child(3) > a > img {
-    height: 300;
+    
+    
+  #title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #portfolio > div > div.portfolio-flex-row > div:nth-child(2) > a > img {
+    height: 140px;
     width: auto;
+  }
+
+  #title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
   }
 
 
