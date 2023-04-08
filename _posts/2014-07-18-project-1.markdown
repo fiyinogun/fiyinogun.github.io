@@ -12,7 +12,11 @@ summary: Predicting staffing needs based on an analysis of Influenza mortality t
 
 **Background**: The United States has an Influenza season where more people than usual suffer from the flu. Some people develop serious complications and end up in the hospital. Hospitals and clinics need additional staff to adequately treat these extra patients.
 
+<br>
+
 **Goal**: To help a medical staffing agency that provides temporary workers to hospitals and clinics on an as needed basis
+
+<br>
 
 **Objective**: Determine when and where to send staff for the upcoming flu season
 
@@ -47,7 +51,7 @@ This data set contains general population estimates for U.S. state counties from
 
 <br><br>
 
-**Analysis process**:
+#### Analysis process:
   
 The first stage of the project was to source the data and check for its reliability. As both data sets came from reputable U.S. government organizations, they were considered reliable for the purpose of the analysis.
 
@@ -114,15 +118,14 @@ I then conducted a two-sample t-test to compare the mortality rates of the two t
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Flu%20case%20study/hypothesisTest.png?raw=true)
 
-<br>
 
 From the results of the test, I rejected the null hypothesis. The p value (1.2457E-169) being much smaller than the significance level (0.05) proved that the Influenza mortality rates for the population above sixty-five is higher than that of the population below sixty-five. The initial results suggested that the elderly population is much more vulnerable.
 
 After completion of statistical analysis in Excel, I prepared a preliminary report of my work and findings thus far. The report can be found [here](https://coach-courses-us.s3.amazonaws.com/exercises/1034/52364/6196ecb325d1b5552d815fd3364f5487/DI--Task-1.10-Consolidating-Analytical-Insights.pdf)
 
-<br><br>
+<br>
 
-**Results**:
+#### Results:
 
 <br>
 
@@ -154,7 +157,7 @@ Following up on the hypothesis, I used a scatterplot to compare the relationship
 
 <br>
 
-**Recommendations:
+**Recommendations**:
 
 Since there are two main spikes in Influenza fatality during the year, one in the Fall season and another in the Winter season, I recommended that the staffing agency should distribute additional personnel at the onset of the Fall season in September and another batch at the onset of the Winter season in December.
 
