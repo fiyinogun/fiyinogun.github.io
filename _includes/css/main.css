@@ -471,15 +471,7 @@ footer .footer-below {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-
-
-
-#portfolio > div > div.portfolio-flex-row > div:nth-child(1) > a > img{
-    height: 486px;
-    width: 364px;
     
-    
-
 .navbar-nav>.active>a {
     background-color: #{{ site.color.secondary-dark }} !important;
 }
@@ -490,27 +482,3 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
-
-
-    
-    
-  #title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  #portfolio > div > div.portfolio-flex-row > div:nth-child(2) > a > img {
-    height: 489px;
-    width: auto;
-  }
-
-  #title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-
-  
-
