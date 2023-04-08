@@ -2,7 +2,7 @@
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: flucover.png
+img: flucover2.png
 alt: image-alt
 title: PREPARING FOR INFLUENZA SEASON
 summary: Predicting staffing needs based on an analysis of Influenza mortality trends in the United States
