@@ -75,7 +75,7 @@ Then I created a data dictionary to describe the contents and format of the data
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Rockbuster%20case%20study/datadict.png?raw=true)
 
-See the complete [data dictionary](https://coach-courses-us.s3.amazonaws.com/exercises/1054/52364/cf6df472a8db61c5b0164a5200ac96aa/DI--Task-3.10---Presenting-SQL-Results--Data-Dictionary-.pdf)
+See the complete [data dictionary](https://drive.google.com/file/d/1ycs5gtEVLyL7OtQlNxQZmShFlTXk_mf4/view?usp=share_link)
 
 <br>
 
