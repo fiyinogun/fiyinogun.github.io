@@ -142,7 +142,7 @@ Rockbuster should also consider starting the service with the most popular movie
 
 For revenue generation, Rockbuster would have to design a new model that would make up for all the revenue that came from late fees. A subscription model is one example. A rewards program could also be introduced to incentivize more rentals.
 
-See the full [Tableau storyboard](https://public.tableau.com/app/profile/fiyin4479/viz/DITask3_10-PresentingSQLResultsPresentation/Rockbuster?publish=yes) and the [Excel file](https://coach-courses-us.s3.amazonaws.com/exercises/1054/52364/d5863a769814019cf352cb14d08fc486/DI--Task-3.10---Presenting-SQL-Results--SQL-results-and-queries-.xlsx) containing all the queries used to answer business questions.
+See the full [Tableau storyboard](https://public.tableau.com/app/profile/fiyin4479/viz/RockbusterMovieRentals_16809756743380/Rockbuster?publish=yes) and the [spreadsheet](https://docs.google.com/spreadsheets/d/1s43a4N0zInXevJ_xfQTBj47ZCAAR4rxa/edit?usp=share_link&ouid=108598248110506806753&rtpof=true&sd=true) containing all the queries used to answer business questions.
 
 <br>
 
