@@ -10,7 +10,7 @@ category:
 title: GAMECO
 summary: Analysis of global video game sales between 1980 and 2016
 
-link: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTLD4UFNWMUhWvSM-mr5RZfE_z2mNhFHjN9z8BWUCegLnqAWXrwLs_nGY8qz3WTIw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+link: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTLD4UFNWMUhWvSM-mr5RZfE_z2mNhFHjN9z8BWUCegLnqAWXrwLs_nGY8qz3WTIw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 linktitle: 'GameCo: Video Games Market Analysis'
 
