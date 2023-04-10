@@ -32,6 +32,25 @@
                                     </strong>
                                 </li>
                             </ul> -->
+                         
+                         
+                              <ul class="list-inline item-details">
+
+                                {% if post.link%}
+                                    {% if post.linktitle%}
+                                    <li><h3>{{ post.linktitle}}</h3></li>
+                                    <br>
+                                    <br>
+                                    {% endif %}
+                                <li> {{ post.link}} </li>
+                                <br>
+                                <br>
+                                {% endif %}
+                              
+                            </ul>
+                         
+                         
+                         
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
