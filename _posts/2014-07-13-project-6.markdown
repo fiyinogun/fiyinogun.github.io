@@ -14,6 +14,8 @@ link: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTLD4UFNWMUhW
 
 linktitle: 'GameCo: Video Games Market Analysis'
 
+---
+
 <br><br>
 
 **PROJECT REFLECTIONS**:
