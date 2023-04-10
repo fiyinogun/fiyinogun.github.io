@@ -11,3 +11,49 @@ title: GAMECO
 summary: Analysis of global video game sales between 1980 and 2016
 
 ---
+
+link: <iframe src="<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTLD4UFNWMUhWvSM-mr5RZfE_z2mNhFHjN9z8BWUCegLnqAWXrwLs_nGY8qz3WTIw/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>" width="700px" height="600px" frameborder="0"></iframe>
+
+linktitle: 'GameCo: Video Games Market Analysis'
+
+<br><br>
+
+**PROJECT REFLECTIONS**:
+
+
+One of the main insights uncovered in the course of this analysis is the pattern of the video game market in Europe, which has been growing steadily over time. Prior to analysis, the expectation was that, of the three major video game markets, North America would lead the way in sales, closely followed by Europe, with Japan farther behind, due to its much smaller market compared to the two continents. 
+
+In order to test this hypothesis, as well as to gain a better understanding of the three markets, it was necessary to calculate the proportion of global sales for each region. This was done using a pivot table calculated field. For total global sales, the calculations more or less confirmed the hypothesis: North America held 49% of global sales, Europe 27%, and 14% for Japan. To see how the proportion varied for each year, the “year” variable was introduced in the pivot table, and the proportion of sales was calculated for the regions for every year. Then, from this grouping, a line chart was created to display the trend of the sales percentages by region, over time.
+
+<br>
+
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/GameCo%20case%20study/gameCo%20erratic.png?raw=true)
+
+<br>
+
+The erratic fluctuations observed in the chart for the earlier years called for further analysis. The number of records for each year was counted in a pivot table, and it was discovered that the period between 1980 and 1993 have the fewest records in the data set. The “year” variable was then filtered to include data only from the most recent twenty years. The patterns become clearer within this period.  The data from this period is a more accurate reflection of market trends.
+
+<br>
+
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/GameCo%20case%20study/gameCo%20normal.png?raw=true)
+
+<br>
+
+From the chart above, it can be seen that the proportion of European sales have more or less been on the rise from the outset. There was a slight dip between 2003 and 2006, but it has been rising steadily ever since. The trend for the sales proportions of North America and Japan are as expected, almost exactly mirroring each other over time.
+
+The critical point of note occurs around 2015-2016 when the European market overtakes the North American market. This is one of the more interesting insights revealed during this analysis, which should prompt a re-evaluation of earlier expectations, as well as a revision of GameCo’s marketing budget to account for the market growth in Europe.
+
+<br><br>
+
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/GameCo%20case%20study/NA%20genre.png?raw=true)
+
+<br>
+
+![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/GameCo%20case%20study/NA%20proportion.png?raw=true)
+
+
+The two charts above are from an analysis of the top selling genres in North America over time. The same analysis was also performed for Europe and Japan. Each region is unique, and it is important to analyze and understand the different trends for each. 
+
+The first chart shows that Action, Sports, and Shooter games are the most preferred genres in North America. This information will allow the GameCo executives to understand what genres to prioritize in the development of new games. This applies also to the other regions. The second chart is a comparison of the sales of the top three genres for each of the last ten years. It highlights how each of the genres have performed in recent times. This will help to see if any of the top genres have gotten more popular or unpopular over time.
+
+---
