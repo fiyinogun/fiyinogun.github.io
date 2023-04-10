@@ -121,7 +121,7 @@ To continue exploring the data in Python, I sourced geospatial data to visualize
 
 From a time series decomposition in Python, I visualized the total number of incidents between 2017 and 2022. I found a sharp decrease in the number of incidents around 2020, which is obviously due to the Covid pandemic lockdowns. The number of incidents began to rise again in 2021, after the lockdowns had ceased. 
 
-It was very interesting to discover a seasonal pattern to the occurrence of incidents over time. I found that incidents are lowest both at the beginning and at the end of the year, and highest around the middle of the year. The period of the fewest incidents corresponds to the winter season in New York City. Though this scope of this analysis did not cover any information on traffic volume, one can assume that traffic volume is probably lowest during the winter season across the city.
+It was very interesting to discover a seasonal pattern to the occurrence of incidents over time. I found that incidents are lowest both at the beginning and at the end of the year. The period of the fewest incidents corresponds to the winter season in New York City. Though this scope of this analysis did not cover any information on traffic volume, one can assume that traffic volume is probably lowest during the winter season across the city.
 
 ![](https://github.com/fiyinogun/fiyinogun.github.io/blob/master/img/Collisions%20case%20study/PythonTime.png?raw=true)
 
