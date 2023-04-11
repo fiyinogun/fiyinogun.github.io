@@ -56,4 +56,8 @@ The two charts above are from an analysis of the top selling genres in North Ame
 
 The first chart shows that Action, Sports, and Shooter games are the most preferred genres in North America. This information will allow the GameCo executives to understand what genres to prioritize in the development of new games. This applies also to the other regions. The second chart is a comparison of the sales of the top three genres for each of the last ten years. It highlights how each of the genres have performed in recent times. This will help to see if any of the top genres have gotten more popular or unpopular over time.
 
+<br>
+
+See the full presentation below. It is also available for download [here](https://drive.google.com/file/d/1zVf0fjUbTJhbaAipfv_KiXTKzKJOPX4v/view?usp=share_link)
+
 ---
